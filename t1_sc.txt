@@ -1,0 +1,30 @@
+O presente trabalho tem como objetivo o estudo prático e a implementação de versões simplificadas 
+do protocolo Diffie-Hellman e do esquema de criptografia ElGamal, aplicando-os em um sistema simples
+de envio de mensagens criptografadas.
+
+O sistema deverá simular uma comunicação entre dois participantes, A e B, sem o uso de sockets ou
+programação de rede. A troca de mensagens pode ser realizada por chamadas de função, arquivos,
+menus interativos ou entrada/saída padrão. De forma geral, A deverá gerar os parâmetros públicos p e g, 
+B deverá gerar sua chave pública, A deverá criptografar uma mensagem utilizando ElGamal e, por fim, 
+B deverá descriptografá-la utilizando sua chave privada. 
+
+Durante o desenvolvimento do trabalho, vocês deverão implementar a geração de números primos 
+relativamente grandes, o teste de primalidade Miller-Rabin (obrigatoriamente implementado manualmente), 
+exponenciação modular eficiente, cálculo de inverso modular e geração de raízes primitivas módulo p. 
+Para a obtenção da raiz primitiva, recomenda-se utilizar o método baseado na fatoração de p - 1,
+verificando se um candidato g satisfaz as propriedades necessárias para ser gerador do grupo 
+multiplicativo módulo p, da seguinte forma:
+
+fatorar p-1;
+pegar um candidato g;
+para cada fator primo q de p-1, verificar:
+g^[(p-1)/q] != 1 (mod p)
+
+Veja: https://www.apfloat.org/prim.html
+
+O foco do trabalho é compreender os fundamentos matemáticos envolvidos nos algoritmos criptográficos. 
+Portanto, todas as implementações principais devem ser feitas manualmente. Será permitido o uso de 
+bibliotecas como a gmpy2 exclusivamente para operações básicas de aritmética modular e manipulação 
+de inteiros grandes. Entretanto, é proibido utilizar funcionalidades prontas relacionadas a Diffie-Hellman, 
+ElGamal, geração automática de chaves, testes de primalidade já implementados ou quaisquer primitivas 
+criptográficas equivalentes.
