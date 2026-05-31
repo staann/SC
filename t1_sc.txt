@@ -28,3 +28,9 @@ bibliotecas como a gmpy2 exclusivamente para operações básicas de aritmética
 de inteiros grandes. Entretanto, é proibido utilizar funcionalidades prontas relacionadas a Diffie-Hellman, 
 ElGamal, geração automática de chaves, testes de primalidade já implementados ou quaisquer primitivas 
 criptográficas equivalentes.
+
+O trabalho deve ser feito individualmente e entregue na plataforma Aprender3. Vocês devem entregar os seguintes itens:
+
+Código completo do trabalho (4,5 pontos);
+Instruções para compilar e executar o programa (1,0 ponto);
+Relatório (máx. 5 páginas) contendo descrição da solução desenvolvida, explicação da implementação do Diffie-Hellman, explicação da implementação do ElGamal, explicação da implementação do Miller-Rabin e discussão das principais dificuldades encontradas durante o desenvolvimento (4,5 pontos). 
